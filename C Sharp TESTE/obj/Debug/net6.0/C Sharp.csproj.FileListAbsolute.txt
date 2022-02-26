@@ -1,0 +1,30 @@
+D:\Projeto C#\Nova pasta\C#\Teste C sharp\C Sharp\bin\Debug\net6.0\C Sharp.exe
+D:\Projeto C#\Nova pasta\C#\Teste C sharp\C Sharp\bin\Debug\net6.0\C Sharp.deps.json
+D:\Projeto C#\Nova pasta\C#\Teste C sharp\C Sharp\bin\Debug\net6.0\C Sharp.runtimeconfig.json
+D:\Projeto C#\Nova pasta\C#\Teste C sharp\C Sharp\bin\Debug\net6.0\C Sharp.dll
+D:\Projeto C#\Nova pasta\C#\Teste C sharp\C Sharp\bin\Debug\net6.0\ref\C Sharp.dll
+D:\Projeto C#\Nova pasta\C#\Teste C sharp\C Sharp\bin\Debug\net6.0\C Sharp.pdb
+D:\Projeto C#\Nova pasta\C#\Teste C sharp\C Sharp\obj\Debug\net6.0\C Sharp.csproj.AssemblyReference.cache
+D:\Projeto C#\Nova pasta\C#\Teste C sharp\C Sharp\obj\Debug\net6.0\C Sharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projeto C#\Nova pasta\C#\Teste C sharp\C Sharp\obj\Debug\net6.0\C Sharp.AssemblyInfoInputs.cache
+D:\Projeto C#\Nova pasta\C#\Teste C sharp\C Sharp\obj\Debug\net6.0\C Sharp.AssemblyInfo.cs
+D:\Projeto C#\Nova pasta\C#\Teste C sharp\C Sharp\obj\Debug\net6.0\C Sharp.csproj.CoreCompileInputs.cache
+D:\Projeto C#\Nova pasta\C#\Teste C sharp\C Sharp\obj\Debug\net6.0\C Sharp.dll
+D:\Projeto C#\Nova pasta\C#\Teste C sharp\C Sharp\obj\Debug\net6.0\ref\C Sharp.dll
+D:\Projeto C#\Nova pasta\C#\Teste C sharp\C Sharp\obj\Debug\net6.0\C Sharp.pdb
+D:\Projeto C#\Nova pasta\C#\Teste C sharp\C Sharp\obj\Debug\net6.0\C Sharp.genruntimeconfig.cache
+D:\Projeto C#\C#\C Sharp\bin\Debug\net6.0\C Sharp.exe
+D:\Projeto C#\C#\C Sharp\bin\Debug\net6.0\C Sharp.deps.json
+D:\Projeto C#\C#\C Sharp\bin\Debug\net6.0\C Sharp.runtimeconfig.json
+D:\Projeto C#\C#\C Sharp\bin\Debug\net6.0\C Sharp.dll
+D:\Projeto C#\C#\C Sharp\bin\Debug\net6.0\ref\C Sharp.dll
+D:\Projeto C#\C#\C Sharp\bin\Debug\net6.0\C Sharp.pdb
+D:\Projeto C#\C#\C Sharp\obj\Debug\net6.0\C Sharp.csproj.AssemblyReference.cache
+D:\Projeto C#\C#\C Sharp\obj\Debug\net6.0\C Sharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projeto C#\C#\C Sharp\obj\Debug\net6.0\C Sharp.AssemblyInfoInputs.cache
+D:\Projeto C#\C#\C Sharp\obj\Debug\net6.0\C Sharp.AssemblyInfo.cs
+D:\Projeto C#\C#\C Sharp\obj\Debug\net6.0\C Sharp.csproj.CoreCompileInputs.cache
+D:\Projeto C#\C#\C Sharp\obj\Debug\net6.0\C Sharp.dll
+D:\Projeto C#\C#\C Sharp\obj\Debug\net6.0\ref\C Sharp.dll
+D:\Projeto C#\C#\C Sharp\obj\Debug\net6.0\C Sharp.pdb
+D:\Projeto C#\C#\C Sharp\obj\Debug\net6.0\C Sharp.genruntimeconfig.cache
