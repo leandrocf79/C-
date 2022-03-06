@@ -12,6 +12,7 @@ namespace CursoCSharp.Fundamentos
         {
             //Área da circunferência
             double raio = 4.5;
+            raio = 5.7;
             const double Pi = 3.14159;
             double area = Pi * raio * raio;
             Console.WriteLine("Área 1: "+ area);
