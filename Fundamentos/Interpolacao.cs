@@ -16,7 +16,7 @@ namespace CursoCSharp.Fundamentos
             Console.WriteLine("O "+nome+" da marca "+marca+" custa R$"+valor+".");//concatenação
             Console.WriteLine("O {0} da marca {1} custa R${2}.", nome, marca, valor);
             Console.WriteLine($"A marca {marca} é boa.");
-            Console.WriteLine($"1 + 1 = {1 + 1}");
+            Console.WriteLine($"1 + 1 = {1 + 1}"); // $ é para ativar a interpolação
         }
     }
 }
