@@ -19,8 +19,8 @@ namespace CursoCSharp.Fundamentos
             int a = 1;
             int b = a;
 
-            a++; // a = a + 1;
-            b--; // b = b - 1;
+            a++; // a = a + 1;  incremento
+            b--; // b = b - 1;  decremento
 
             Console.WriteLine($"{a} {b}");// $ é para ativar a interpolação de a e b
 
