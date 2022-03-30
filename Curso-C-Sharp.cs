@@ -368,22 +368,389 @@ class OperadoresAtribuicao
 
 
 
+class OperadoresUnarios
+{
+    public static void Executar()
+    {
+        var valorNegativo = -5;
+        var numero1 = 2;
+        var numero2 = 3;
+        var booleano = true;
+        Console.WriteLine("valorNegativo = -5; booleano = true; numero1 = 2; numero2 = 3;  \n******************");
+
+        Console.WriteLine("-valorNegativo: ");
+        Console.WriteLine(-valorNegativo);
+        Console.WriteLine("!booleano: ");
+        Console.WriteLine(!booleano);
+
+        numero1++;
+        Console.WriteLine("numero1++ (incremento): ");
+        Console.WriteLine(numero1);
+
+        --numero1;
+        Console.WriteLine("--numero1 (decremento): ");
+        Console.WriteLine(numero1);
+
+        Console.WriteLine("\n(numero1++ == --numero2):");
+        Console.WriteLine(numero1++ == --numero2);/* para BOAS PRÁTICAS evitar esse tipo de
+                                                       * algorítmo, misturando muitas coisas.*/
+        Console.WriteLine($"{numero1} {numero2}");
+    }
+}
+
+
+
+
+
+class OperadorTernario
+{
+    public static void Executar()
+    {
+        var nota = 9.0;
+        bool bomComportamento = true;
+        string resultado = nota >= 7.0 && bomComportamento ? "Aprovado" : "Reprovado";
+        Console.WriteLine(resultado);
+    }
+}
+
+
+
+// ESTRUTURAS DE CONTROLE
+
+namespace CursoCSharp.EstruturasDeControle
+{
+    class EstruturaIf
+    {
+        public static void Executar()
+        {
+            bool bomComportamento = false;
+            string entrada;
+
+            Console.Write("Digite a nota do aluno: ");
+            entrada = Console.ReadLine();
+            Double.TryParse(entrada, out double nota);
+
+            Console.WriteLine("Possui bom comportamento (S/N): ");
+            entrada = Console.ReadLine();
+
+            //if (entrada == "S" || entrada == "s")
+            //    bomComportamento = true;
+
+            // bomComportamento = entrada == "S" || entrada == "s";
+            bomComportamento = entrada.ToLower() == "s"; /*Essa estrutura substitui as outras
+                                                          *3 acima, já cria uma estrutura de valor
+                                                          *lógico e passa o dígito para minusculo*/
+
+            if (nota >= 9.0 && bomComportamento)/*nunca por ; aqui*/
+            {
+                Console.WriteLine("Quadro de honra!");
+            }
+        }
+    }
 
 
 
 
 
 
+    class EstruturaIfElse
+    {
+        public static void Executar()
+        {
+            double nota = 7.0;
+
+            if (nota >= 7.0)
+            {
+                Console.WriteLine("Aprovado!");
+                Console.WriteLine("Não fez mais que sua obrigação...");
+            }
+            else
+            {
+                Console.WriteLine("Recuperação");
+            }
+        }
+    }
+
+
+
+
+    class EstruturaIf
+    {
+        public static void Executar()
+        {
+            bool bomComportamento = false;
+            string entrada;
+
+            Console.Write("Digite a nota do aluno: ");
+            entrada = Console.ReadLine();
+            Double.TryParse(entrada, out double nota);
+
+            Console.WriteLine("Possui bom comportamento (S/N): ");
+            entrada = Console.ReadLine();
+
+            //if (entrada == "S" || entrada == "s")
+            //    bomComportamento = true;
+
+            // bomComportamento = entrada == "S" || entrada == "s";
+            bomComportamento = entrada.ToLower() == "s"; /*Essa estrutura substitui as outras
+                                                          *3 acima, já cria uma estrutura de valor
+                                                          *lógico e passa o dígito para minusculo*/
+
+            if (nota >= 9.0 && bomComportamento)/*nunca por ; aqui*/
+            {
+                Console.WriteLine("Quadro de honra!");
+            }
+        }
+    }
+
+
+
+
+    class EstruturaIfElseIf
+    {
+        public static void Executar()
+        {
+            Console.Write("Digite a nota do aluno: ");
+
+            string entrada = Console.ReadLine();
+            Double.TryParse(entrada, out double nota);
+
+            if (nota >= 9.0)
+            {
+                Console.WriteLine("Quadro de honra!");
+            }
+            else if (nota >= 7.0)
+            {
+                Console.WriteLine("Aprovado!");
+            }
+            else if (nota >= 5.0)
+            {
+                Console.WriteLine("Recuperação");
+            }
+            else
+            {
+                Console.WriteLine("Te vejo na proxima...");
+            }
+
+            Console.WriteLine("Fim!!");
+        }
+    }
+
+
+
+
+    class EstruturaSwitch
+    {
+        public static void Executar()
+        {
+            Console.Write("Avalie meu atendimento com uma nota de 1 a 5: ");
+            int.TryParse(Console.ReadLine(), out int nota);
+
+            switch (nota)
+            {
+                case 0:
+                    Console.WriteLine("Péssimo");
+                    break;
+                case 1:
+                case 2:
+                    Console.WriteLine("Ruim");
+                    break;
+                case 3:
+                    Console.WriteLine("Regular");
+                    break;
+                case 4:
+                    Console.WriteLine("Bom");
+                    break;
+                case 5:
+                    Console.WriteLine("Ótimo");
+                    Console.WriteLine("Parabéns!");
+                    break;
+                default:
+                    Console.WriteLine("Nota inválida");
+                    break;
+            }
+
+            Console.WriteLine("Obrigado por responder!");
+        }
+    }
+
+
+
+    class EstruturaWhile
+    {
+        public static void Executar()
+        {
+            int palpite = 0;
+            Random random = new Random();
+
+            int numeroSecreto = random.Next(1, 16);
+            bool numeroEncontrado = false;
+            int tentativasRestantes = 5;
+            int tentativas = 0;
+
+            while (tentativasRestantes > 0 && !numeroEncontrado)
+            {
+                Console.Write("Insira o seu palpite: ");
+                string entrada = Console.ReadLine();
+                int.TryParse(entrada, out palpite);
+
+                tentativas++;
+                tentativasRestantes--;
+
+                if (numeroSecreto == palpite)
+                {
+                    numeroEncontrado = true;
+                    var corAnterior = Console.BackgroundColor;
+                    Console.BackgroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Numero encontrado em {0} tentativas",
+                        tentativas);
+                    Console.BackgroundColor = corAnterior;
+                }
+                else if (palpite > numeroSecreto)
+                {
+                    Console.WriteLine("Menor... Tente novamente!");
+                    Console.WriteLine("Tentativas restantes: {0}",
+                        tentativasRestantes);
+                }
+                else
+                {
+                    Console.WriteLine("Maior... Tente novamente!");
+                    Console.WriteLine("Tentativas restantes: {0}",
+                        tentativasRestantes);
+                }
+            }
+        }
+    }
+
+
+
+
+    class EstruturaDoWhile
+    {
+        public static void Executar()
+        {
+            string entrada;
+
+            do
+            {
+                Console.WriteLine("Qual o seu nome?");
+                entrada = Console.ReadLine();
+
+                Console.WriteLine("Seja bem-vindo {0}", entrada);
+                Console.WriteLine("Deseja continuar?(S/N)");
+                entrada = Console.ReadLine();
+            } while (entrada.ToLower() == "s");
+        }
+    }
+
+
+
+    class EstruturaFor
+    {
+        public static void Executar()
+        {
+            //for (int i = 1; i <= 10; i++) {
+            //    Console.WriteLine($"O valor de i é {i}.");
+            //}
+
+            double somatorio = 0;
+            string entrada;
+
+            Console.Write("Informe o tamano da turma: ");
+            entrada = Console.ReadLine();
+            int.TryParse(entrada, out int tamanhoTurma);
+
+            for (int i = 1; i <= tamanhoTurma; i++)
+            {
+                Console.Write("Informe a nota do aluno {0}: ", i);
+                entrada = Console.ReadLine();
+                double.TryParse(entrada, out double notaAtual);
+
+                somatorio += notaAtual;
+            }
+
+            double media = tamanhoTurma > 0 ? somatorio / tamanhoTurma : 0;
+            Console.WriteLine("Media da turma: {0}", media);
+        }
+    }
+
+
+
+
+
+    class EstruturaForEach
+    {
+        public static void Executar()
+        {
+            var palavra = "Opa!";
+
+            foreach (var letra in palavra)
+            {
+                Console.WriteLine(letra);
+            }
+
+            var alunos = new string[] { "Ana", "Bia", "Carlos" };
+
+            foreach (string aluno in alunos)
+            {
+                Console.WriteLine(aluno);
+            }
+        }
+    }
+
+
+
+
+    class UsandoBreak
+    {
+        public static void Executar()
+        {
+            Random random = new Random();
+            int numero = random.Next(1, 51);
+
+            Console.WriteLine("O número que queremos é {0}.", numero);
+
+            for (int i = 1; i <= 50; i++)
+            {
+                Console.Write("{0} é o numero que queremos? ", i);
+                if (i == numero)
+                {
+                    Console.WriteLine("Sim!");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Não!");
+                }
+            }
+
+            Console.WriteLine("Fim!");
+        }
+    }
 
 
 
 
 
 
+    class UsandoContinue
+    {
+        public static void Executar()
+        {
+            int intervalo = 50;
+            Console.WriteLine("Numeros pares entre 1 e {0}!", intervalo);
 
+            for (int i = 1; i <= intervalo; i++)
+            {
+                if (i % 2 == 1)
+                {
+                    continue;
+                }
 
-
-
+                Console.Write(i + " ");
+            }
+        }
+    }
 
 
 
