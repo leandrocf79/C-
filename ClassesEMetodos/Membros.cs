@@ -8,10 +8,11 @@ namespace CursoCSharp.ClassesEMetodos
                    * do mesmo namespace, sem ter que abrir novos arquivos, é apenas 
                    * uma questão de organização.*/
     {
-        public static void Executar() {
+        public static void Executar()
+        {
 
             //clsse              construtor     diferenças entre as palavras Pessoas
-                        Pessoa sicrano = new Pessoa();//Segure Ctrl e clicar sobre pessoa
+            Pessoa sicrano = new Pessoa();//Segure Ctrl e clicar sobre pessoa
             sicrano.Nome = "Leandro";
             sicrano.Idade = 42;
 
