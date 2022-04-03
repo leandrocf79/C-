@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CursoCSharp.ClassesEMetodos 
+namespace CursoCSharp.ClassesEMetodos
 { //Esta classe esta vinculada com a classe membros
     class Pessoa  //tipo
 
@@ -11,16 +11,19 @@ namespace CursoCSharp.ClassesEMetodos
         public int Idade; // int tem valor padrão 0. Segure Ctrl e 2 clics do mouse sobre int
 
         //abaixo 2 comportamentos
-        public string Apresentar() {
+        public string Apresentar()
+        {
             return string.Format(
                 $"Olá! Me chamo {Nome} e tenho {Idade} anos.");
         }
 
-        public void ApresentarNoConsole() {
+        public void ApresentarNoConsole()
+        {
             Console.WriteLine(Apresentar());
         }
 
-        public void Zerar() {
+        public void Zerar()  
+        {
             Nome = "";
             Idade = 0;
         }
