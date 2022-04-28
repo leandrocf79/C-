@@ -44,7 +44,7 @@ namespace CursoCSharp {
                 Console.WriteLine("Ocorreu um erro: {0}", e.Message);
                 Console.ResetColor();
 
-                Console.WriteLine(e.StackTrace);
+                Console.WriteLine(e.StackTrace); // Caso haja erro será exibido aqui
             }
         }
     }
